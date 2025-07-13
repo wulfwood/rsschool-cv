@@ -1,6 +1,416 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
 * {
     font-family: Inter, sans-serif;
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #d1d1d1;
+}
+
+.container {
+    position: relative;
+    width: 100%;
+    max-width: 1000px;
+}
+
+.header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 80px;
+    background-color: #000;
+}
+
+.inner_header ul {
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+}
+
+.inner_header ul li {
+    padding: 24px;
+    font-size: 14pt;
+    font-weight: 300;
+    color: #fff;
+}
+
+.container .main {
+    display: flex;
+    flex-direction: row;
+    min-height: 1000px;
+}
+
+.main .left_side {
+    position: relative;
+    background-color: #232323;
+    padding: 30px 50px;
+    flex: 1;
+}
+
+.profile_info {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
+
+.profile_info h1 {
+    color: #fff;
+    font-size: 42pt;
+    text-align: left;
+    font-weight: bold;
+}
+
+.profile_info h3 {
+    color: #fff;
+    font-size: 16pt;
+    text-align: left;
+    font-weight: 300;
+    margin-bottom: 10px;
+}
+
+.profile_info .img_box {
+    position: relative;
+    width: 300px;
+    height: 400px;
+    overflow: hidden;
+}
+
+.profile_info .img_box img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.contacts {
+    padding-top: 40px;
+}
+
+.contacts .title {
+    color: #fff;
+    font-size: 25pt;
+    letter-spacing: 1px;
+    margin-bottom: 20px;
+    padding-bottom: 8px;
+    font-weight: 600;
+    border-bottom: 3px solid #fff;
+    width: 50px;
+}
+
+.contacts ul {
+    position: relative;
+}
+
+.contacts ul li {
+    position: relative;
+    list-style: none;
+    margin: 15px 0;
+}
+
+li .icon {
+    display: inline-block;
+    width: 30px;
+    font-size: 18px;
+    color: #23D3FF;
+}
+
+li span {
+    color: #fff;
+    font-weight: 400;
+}
+
+.education {
+    padding-top: 40px;
+}
+
+.education .title {
+    color: #fff;
+    font-size: 25pt;
+    letter-spacing: 1px;
+    margin-bottom: 20px;
+    padding-bottom: 8px;
+    font-weight: 600;
+    border-bottom: 3px solid #fff;
+    width: 50px;
+}
+
+.education ul {
+    position: relative;
+}
+
+.education ul li {
+    position: relative;
+    list-style: none;
+    margin: 20px 0;
+}
+
+.education h5 {
+    color: #23D3FF;
+    font-weight: 400;
+}
+
+.education h4 {
+    color: #fff;
+    font-weight: 400;
+}
+
+.languages {
+    padding-top: 40px;
+}
+
+.languages .title {
+    color: #fff;
+    font-size: 25pt;
+    letter-spacing: 1px;
+    margin-bottom: 20px;
+    padding-bottom: 8px;
+    font-weight: 600;
+    border-bottom: 3px solid #fff;
+    width: 50px;
+}
+
+.languages ul {
+    position: relative;
+}
+
+.languages ul li {
+    position: relative;
+    list-style: none;
+    margin: 20px 0;
+}
+
+.languages .progress_bar {
+    position: relative;
+    width: 100%;
+    height: 8px;
+    background-color: #fff;
+    margin: 5px 0;
+}
+
+.languages ul li .description {
+    color: #fff;
+    font-weight: 200;
+}
+
+.languages .progress_bar div {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    background-color: #23D3FF;
+}
+
+.right_side {
+    position: relative;
+    background-color: #fff;
+    padding: 30px 50px;
+    flex: 2;
+}
+
+.about {
+    margin-bottom: 50px;
+    margin-top: 20px;
+}
+
+.about .title2 {
+    color: #232323;
+    font-size: 25pt;
+    letter-spacing: 1px;
+    margin-bottom: 20px;
+    padding-bottom: 8px;
+    font-weight: 600;
+    border-bottom: 3px solid #232323;
+    width: 50px;
+}
+
+p {
+    color: #232323;
+}
+
+.about .box_info {
+    display: flex;
+    flex-direction: row;
+    margin: 20px 0;
+}
+
+.about .box_info .company_info {
+    min-width: 150px;
+}
+
+.company_info h5 {
+    color: #23D3FF;
+    font-weight: 600;
+    margin-bottom: 5px;
+}
+
+.company_info h4 {
+    color: #232323;
+    font-weight: 700;
+}
+
+.experience_description h3 {
+    color: #232323;
+    font-weight: 700;
+    margin-bottom: 5px;
+}
+
+.skills {
+    margin-bottom: 50px;
+    margin-top: 20px;
+}
+
+.skills .title2 {
+    color: #232323;
+    font-size: 25pt;
+    letter-spacing: 1px;
+    margin-bottom: 20px;
+    padding-bottom: 8px;
+    font-weight: 600;
+    border-bottom: 3px solid #232323;
+    width: 50px;
+}
+
+.skills .box h1 {
+    color: #232323;
+    font-weight: 600;
+    font-size: 42pt;
+    margin-right: 5px;
+    margin-bottom: 10px;
+}
+
+.skills .percent {
+    display: flex;
+    flex-direction: row;
+}
+
+.percent .dash_true {
+    position: relative;
+    width: 30px;
+    height: 10px;
+    background-color: #23D3FF;
+    margin: 0 5px 0 0;
+}
+
+.percent .dash_false {
+    position: relative;
+    width: 30px;
+    height: 10px;
+    background-color: #c0c0c0;
+    margin: 0 5px 0 0;
+}
+
+.prof_skill .title_description {
+    display: flex;
+    flex-direction: row;
+    align-items: baseline;
+}
+
+.skills .box {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+}
+
+.code .title2 {
+    color: #232323;
+    font-size: 25pt;
+    letter-spacing: 1px;
+    margin-bottom: 30px;
+    padding-bottom: 8px;
+    font-weight: 600;
+    border-bottom: 3px solid #232323;
+    width: 50px;
+}
+
+.code .code_container {
+    max-width: 700px;
+    margin-top: 30px;
+    margin-bottom: 45px;
+    background-color:#232323;
+    border-radius: 5px;
+}
+
+.code_container .description {
+    padding-top: 20px;
+    color: #fff;
+}
+
+.hobby .title2 {
+    color: #232323;
+    font-size: 25pt;
+    letter-spacing: 1px;
+    margin-bottom: 20px;
+    padding-bottom: 8px;
+    font-weight: 600;
+    border-bottom: 3px solid #232323;
+    width: 50px;
+}
+
+.hobby ul {
+    display: flex;
+    flex-direction: row;
+    gap: 40px;
+    list-style: none;
+}
+
+.hobby ul li {
+    color: #232323;
+    font-weight: 400;
+    margin-bottom: 20px;
+}
+
+.hobby ul li i {
+    display: inline-block;
+    color: #23D3FF;
+    padding-right: 3px;
+    font-size: 25px;
+}
+
+.footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 80px;
+    background-color: #000;
+}
+
+.inner_footer ul {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    list-style: none;
+}
+
+.inner_footer ul li {
+    display: flex;
+    align-items: center;
+    margin: 0 100px;
+    color: #fff;
+}
+
+.inner_footer ul li i {
+    font-size: 40px;
+    color: #23D3FF;
+    padding-right: 5px;
+}
+
+.inner_footer ul li img {
+    display: block;
+    max-width: 120px;
+    max-height: 70px;
+    width: auto;
+    height: auto;
+    overflow: hidden;
 }
