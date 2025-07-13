@@ -19,6 +19,7 @@ body {
     position: relative;
     width: 100%;
     max-width: 1000px;
+    height: 100%;
 }
 
 .header {
@@ -34,19 +35,24 @@ body {
     display: flex;
     flex-direction: row;
     list-style: none;
+    color: #fff;
 }
 
 .inner_header ul li {
     padding: 24px;
     font-size: 14pt;
     font-weight: 300;
+}
+
+.inner_header ul li a {
     color: #fff;
+    text-decoration: none;
 }
 
 .container .main {
     display: flex;
     flex-direction: row;
-    min-height: 1000px;
+    height: 100%;
 }
 
 .main .left_side {
@@ -336,7 +342,6 @@ p {
 .code .code_container {
     max-width: 700px;
     margin-top: 30px;
-    margin-bottom: 45px;
     background-color:#232323;
     border-radius: 5px;
 }
@@ -344,37 +349,6 @@ p {
 .code_container .description {
     padding-top: 20px;
     color: #fff;
-}
-
-.hobby .title2 {
-    color: #232323;
-    font-size: 25pt;
-    letter-spacing: 1px;
-    margin-bottom: 20px;
-    padding-bottom: 8px;
-    font-weight: 600;
-    border-bottom: 3px solid #232323;
-    width: 50px;
-}
-
-.hobby ul {
-    display: flex;
-    flex-direction: row;
-    gap: 40px;
-    list-style: none;
-}
-
-.hobby ul li {
-    color: #232323;
-    font-weight: 400;
-    margin-bottom: 20px;
-}
-
-.hobby ul li i {
-    display: inline-block;
-    color: #23D3FF;
-    padding-right: 3px;
-    font-size: 25px;
 }
 
 .footer {
@@ -396,7 +370,7 @@ p {
 .inner_footer ul li {
     display: flex;
     align-items: center;
-    margin: 0 100px;
+    margin: 100px 100px;
     color: #fff;
 }
 
@@ -413,4 +387,9 @@ p {
     width: auto;
     height: auto;
     overflow: hidden;
+}
+
+.inner_footer ul li a {
+    color: #fff;
+    text-decoration: none;
 }
