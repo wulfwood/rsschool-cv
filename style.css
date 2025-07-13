@@ -287,10 +287,10 @@ p {
     width: 50px;
 }
 
-.skills .box h1 {
+.skills .box h2 {
     color: #232323;
     font-weight: 600;
-    font-size: 42pt;
+    font-size: 40pt;
     margin-right: 5px;
     margin-bottom: 10px;
 }
